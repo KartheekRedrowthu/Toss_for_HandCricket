@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Cricket</title>
+    <link rel="icon" href="handcricket.jpg" type="image">
+    <link rel="stylesheet" href="mini.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="box">Hand Cricket</h1>
+    </div>
+      <div class="user-toss">
+        <h2>Enter your Toss</h2> <br>
+       <input type="radio" id="heads" name="toss" value="Heads"> 
+       <label for="heads">Heads</label>
+       <input type="radio" id="tails" name="toss" value="Tails">
+       <label for="tails"> Tails</label> 
+       <div >
+        <br>
+       <button  type="button" onclick="checkSelection()" id="submittoss" class="btn">Submit</button></div>
+       <div id="result"></div>
+    </div>
+    <div class="container">
+        
+        <div id="coin" class=''>
+          <div id="Heads" class="Heads"></div>
+          <div id="Tails" class="Tails"></div>
+        </div>
+        <button id="flip">Flip this coin for Toss </button>
+      </div>
+      <br>
+      <div class="result" id="resultContainer">
+        <div class="box" id="declare">
+            <p id="resultText"></p>
+        </div>
+    </div>
+    <br>
+    <div id="choicecontainer"></div>
+    <div id="batorbowl" style="display:none;">
+        <h3>Choose your option:</h3>
+        <input type="radio" name="userChoice" value="Bat"> Bat
+        <input type="radio" name="userChoice" value="Bowl"> Bowl
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="submitChoice" class="btn">Submit</button>
+    </div>
+    <br>
+    <div id="displaychoice"></div>
+
+    <script src="mini.js"></script>
+</body>
+</html>
